@@ -1,5 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
+import PageStyles from '../styles';
+import SupportStyles from './styles';
 
 const SupportPage = ({ classes }) => {
   return (
@@ -9,12 +11,4 @@ const SupportPage = ({ classes }) => {
   );
 };
 
-const styles = {
-  page: {
-    width: '100%',
-    boxSizing: 'border-box',
-    padding: 20,
-  },
-};
-
-export default injectSheet(styles)(SupportPage);
+export default injectSheet({...PageStyles, ...SupportStyles})(SupportPage);

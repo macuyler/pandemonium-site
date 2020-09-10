@@ -9,7 +9,7 @@ const App = ({ classes }) => {
       <Router>
         <Switch>
           {Object.keys(routes).map((route) => (
-            <Route path={route} component={routes[route]} />
+            <Route key={route} path={route} component={routes[route]} />
           ))}
         </Switch>
       </Router>
