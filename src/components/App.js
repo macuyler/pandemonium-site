@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import injectSheet from 'react-jss';
 import routes from './pages';
 
-const App = () => {
+const App = ({ classes }) => {
   return (
-    <div className="App">
+    <div className={classes.app}>
       <Router>
         <Switch>
           {Object.keys(routes).map((route) => (
@@ -16,4 +17,11 @@ const App = () => {
   );
 }
 
-export default App;
+const styles = {
+  app: {
+    width: '100%',
+    minHeight: '100vh',
+  }
+};
+
+export default injectSheet(styles)(App);

@@ -1,11 +1,20 @@
 import React from 'react';
+import injectSheet from 'react-jss';
 
-const SupportPage = () => {
-    return (
-        <div className="Page">
-            <h1>Support Page</h1>
-        </div>
-    );
+const SupportPage = ({ classes }) => {
+  return (
+    <div className={classes.page}>
+      <h1>Support Page</h1>
+    </div>
+  );
 };
 
-export default SupportPage;
+const styles = {
+  page: {
+    width: '100%',
+    boxSizing: 'border-box',
+    padding: 20,
+  },
+};
+
+export default injectSheet(styles)(SupportPage);
