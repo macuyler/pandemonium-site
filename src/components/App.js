@@ -1,9 +1,12 @@
 import React from 'react';
+import HomePage from './pages/Home';
+import Banner from '../assets/img/city.jpeg';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <HomePage />
+      <img src={Banner} alt="banner" />
     </div>
   );
 }
