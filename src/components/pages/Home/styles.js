@@ -13,15 +13,12 @@ const HomeStyles = {
     color: '#fff',
     '& h1': {
       fontSize: '5rem',
-      textShadow: '2px 2px 5px rgba(0,0,0,0.8)',
       margin: '0',
       alignItems: 'center',
       backgroundColor: '#010a00',
       display: 'flex',
       color: '#fff',
-      textShadow: '0 0 5px #fff linear-gradient()'
-
-
+      textShadow: '0 0 5px 1px linear-gradient(#fff)',
     },
   },
   about: {
@@ -40,13 +37,13 @@ const HomeStyles = {
     },
     '& h1': {
       fontSize: '3.5rem',
-      marginBottom: 20
+      marginBottom: 20,
     },
     '& p': {
-        maxWidth: '960px',
-        fontSize: '1.8rem',
-        textIndent: '20px'
-    }
+      maxWidth: '960px',
+      fontSize: '1.8rem',
+      textIndent: '20px',
+    },
   },
 };
 
