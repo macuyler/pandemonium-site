@@ -8,7 +8,7 @@ const HomePage = ({ classes }) => {
     return (
       <div className={classes.page}>
         <div className={classes.banner}>
-          <h1>Pandemonium 2020</h1>
+          <h1>pandemonium 2020</h1>
         </div>
         <div className={classes.about}>
             <img src={Logo} alt="Logo" />
