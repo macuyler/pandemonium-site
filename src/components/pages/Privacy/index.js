@@ -313,7 +313,7 @@ const PrivacyPage = ({ classes }) => {
           <a
             href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
             target="_blank"
-            rel="norefferer"
+            rel="noopener noreferrer"
           >
             here
           </a>
@@ -325,7 +325,7 @@ const PrivacyPage = ({ classes }) => {
           <a
             href="https://www.edoeb.admin.ch/edoeb/en/home.html"
             target="_blank"
-            rel="norefferer"
+            rel="noopener noreferrer"
           >
             here
           </a>
@@ -423,7 +423,7 @@ const PrivacyPage = ({ classes }) => {
         <a
           href="https://termly.io/products/privacy-policy-generator/?ftseo"
           target="_blank"
-          rel="norefferer"
+          rel="noopener noreferrer"
         >
           Termly’s Privacy Policy Generator.
         </a>
