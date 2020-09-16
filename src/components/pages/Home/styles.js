@@ -14,6 +14,9 @@ const HomeStyles = {
     backgroundPosition: 'center center',
     color: '#fff',
     '& h1': {
+      textAlign: 'center',
+      boxSizing: 'border-box',
+      padding: '0 12px',
       fontFamily: "'Righteous', cursive",
       fontSize: '5rem',
       margin: '0',
@@ -48,17 +51,21 @@ const HomeStyles = {
     },
     '& h1': {
       fontSize: '3.5rem',
+      boxSizing: 'border-box',
+      padding: '0 10px',
     },
     '& p': {
       maxWidth: '960px',
       fontSize: '1.8rem',
       textIndent: '20px',
+      boxSizing: 'border-box',
+      padding: '0 10px',
     },
   },
   downloads: {
     marginTop: 30,
-    width: '50%',
-    maxWidth: 1000,
+    width: '100%',
+    maxWidth: 800,
     boxSizing: 'border-box',
     padding: 10,
     display: 'flex',
@@ -90,6 +97,47 @@ const HomeStyles = {
     backgroundImage: `url(${AppStore})`,
     width: 300,
     height: 106,
+  },
+  '@media only screen and (max-width: 730px)': {
+    about: {
+      '& img': {
+        width: '60%',
+        maxWidth: 300,
+      },
+      '& img:hover': {
+        width: '60%',
+        marginTop: '0',
+      },
+      '& h1': {
+        fontSize: '2rem',
+      },
+      '& p': {
+        fontSize: '1.2rem',
+        textIndent: 0,
+      },
+    },
+    playStore: {
+      width: 242,
+      height: 106,
+    },
+    appStore: {
+      width: 200,
+      height: 71,
+    },
+  },
+  '@media only screen and (max-width: 560px)': {
+    banner: {
+      '& h1': {
+        fontSize: '2.3rem',
+      },
+    },
+  },
+  '@media only screen and (max-width: 260px)': {
+    banner: {
+      '& h1': {
+        fontSize: '1rem',
+      },
+    },
   },
 };
 
