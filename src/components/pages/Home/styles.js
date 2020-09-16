@@ -18,9 +18,12 @@ const HomeStyles = {
       fontSize: '5rem',
       margin: '0',
       alignItems: 'center',
-      color: '#FB4264',
-      textShadow: '0 0 3vw #F40A35',
-      animation: 'glow 1s ease infinite',
+      textShadow:
+        '0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914',
+      color: '#FED128',
+      animation: navigator.userAgent.includes('Chrome')
+        ? ''
+        : 'glow 1s ease infinite',
     },
   },
   about: {
@@ -72,11 +75,11 @@ const HomeStyles = {
       cursor: 'pointer',
       display: 'block',
       margin: 10,
-      transition: 'all 250ms ease'
+      transition: 'all 250ms ease',
     },
     '& div:hover': {
-      transform: 'scale(1.08)'
-    }
+      transform: 'scale(1.08)',
+    },
   },
   playStore: {
     backgroundImage: `url(${GooglePlay})`,
