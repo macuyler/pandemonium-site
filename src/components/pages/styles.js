@@ -1,5 +1,5 @@
 const PageStyles = {
-  pages: {
+  page: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
