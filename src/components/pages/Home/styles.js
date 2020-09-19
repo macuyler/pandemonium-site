@@ -44,6 +44,7 @@ const HomeStyles = {
       boxShadow: '0px 4px 14px 3px rgba(0,0,0,0.8)',
       marginBottom: 60,
       transition: '300ms ease',
+      borderRadius: '30px',
     },
     '& img:hover': {
       width: '350px',

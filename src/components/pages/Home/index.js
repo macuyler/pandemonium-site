@@ -25,9 +25,21 @@ const HomePage = ({ classes }) => {
         </div>
         <h5 className={classes.devs}>Developers</h5>
         <div className={classes.links}>
-          <a href="https://macuyler.com/">Macuyler Dunn</a>
+          <a
+            href="https://macuyler.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Macuyler Dunn
+          </a>
           <span></span>
-          <a href="https://danielamidon.com/">Daniel Amidon</a>
+          <a
+            href="https://danielamidon.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Daniel Amidon
+          </a>
         </div>
       </div>
     );
