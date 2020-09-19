@@ -24,7 +24,9 @@ const HomeStyles = {
       textShadow:
         '0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914',
       color: '#FED128',
-      animation: 'glow 1s ease infinite',
+      animation: navigator.userAgent.includes('Chrome')
+        ? ''
+        : 'glow 1s ease infinite',
     },
   },
   about: {
