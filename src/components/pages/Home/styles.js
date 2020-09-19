@@ -98,6 +98,34 @@ const HomeStyles = {
     width: 300,
     height: 106,
   },
+  devs: {
+    color: '#fff',
+    fontSize: '1.8rem',
+    padding: 0,
+    marginBottom: '12px'
+  },
+  links: {
+    width: '100%',
+    maxWidth: '600px',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    marginBottom: '30px',
+    '& span': {
+      width: '2px',
+      height: '20px',
+      backgroundColor: '#fff',
+      margin: 0,
+      display: 'block',
+    },
+    '& a': {
+      fontSize: '1.2rem',
+      color: '#10afd6',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+    },
+  },
   '@media only screen and (max-width: 730px)': {
     about: {
       '& img': {
@@ -131,6 +159,17 @@ const HomeStyles = {
         fontSize: '2.3rem',
       },
     },
+  },
+  '@media only screen and (max-width: 345px)': {
+    links: {
+      flexDirection: 'column',
+      '& span': {
+        display: 'none'
+      },
+      '& a': {
+        marginBottom: '14px'
+      }
+    }
   },
   '@media only screen and (max-width: 260px)': {
     banner: {
