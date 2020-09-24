@@ -1,5 +1,6 @@
 import React from 'react';
 import injectSheet from 'react-jss';
+import { Link } from 'react-router-dom';
 import PageStyles from '../styles';
 import HomeStyles from './styles';
 import Logo from '../../../assets/img/icon.png';
@@ -40,6 +41,11 @@ const HomePage = ({ classes }) => {
           >
             Daniel Amidon
           </a>
+        </div>
+        <hr className={classes.thin}></hr>
+        <div className={classes.links}>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/support">Support</Link>
         </div>
       </div>
     );

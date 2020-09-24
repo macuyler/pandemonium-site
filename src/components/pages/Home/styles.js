@@ -127,6 +127,14 @@ const HomeStyles = {
       fontWeight: 'bold',
     },
   },
+  thin: {
+    height: '1px',
+    border: '0',
+    color: '#fff',
+    backgroundColor: '#fff',
+    width: '80%',
+    margin: '10px',
+  },
   '@media only screen and (max-width: 730px)': {
     about: {
       '& img': {
