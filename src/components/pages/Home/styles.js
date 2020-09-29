@@ -74,7 +74,7 @@ const HomeStyles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     flexWrap: 'wrap',
-    '& div': {
+    '& a': {
       backgroundSize: '100%',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
@@ -85,7 +85,7 @@ const HomeStyles = {
       margin: 10,
       transition: 'all 250ms ease',
     },
-    '& div:hover': {
+    '& a:hover': {
       transform: 'scale(1.08)',
     },
   },

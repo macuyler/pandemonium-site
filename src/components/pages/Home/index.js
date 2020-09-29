@@ -20,8 +20,22 @@ const HomePage = ({ classes }) => {
             gain bragging rights over your friends!
           </p>
           <div className={classes.downloads}>
-            <div className={classes.playStore}>Get it on Google Play</div>
-            <div className={classes.appStore}>Download on the App Store</div>
+            <a
+              className={classes.playStore}
+              href="https://play.google.com/store/apps/details?id=com.macuyler.pandemonium2020"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Get it on Google Play
+            </a>
+            <a
+              className={classes.appStore}
+              href="https://www.apple.com/app-store/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Download on the App Store
+            </a>
           </div>
         </div>
         <h5 className={classes.devs}>Developers</h5>
