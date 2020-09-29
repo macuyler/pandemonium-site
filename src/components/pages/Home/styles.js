@@ -100,40 +100,38 @@ const HomeStyles = {
     height: 106,
   },
   devs: {
-    color: '#fff',
-    fontSize: '1.8rem',
+    color: 'rgba(255, 255, 255, 0.8)',
+    fontSize: '1.2rem',
     padding: 0,
-    marginBottom: '12px'
+    marginBottom: '12px',
   },
-  links: {
+  footer: {
     width: '100%',
-    maxWidth: '600px',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around',
     alignItems: 'center',
-    marginBottom: '30px',
-    '& span': {
-      width: '2px',
-      height: '20px',
-      backgroundColor: '#fff',
-      margin: 0,
-      display: 'block',
-    },
+    justifyContent: 'center',
+    borderTop: '1px solid rgba(255, 255, 255, 0.6)',
+    paddingTop: '20px',
+    paddingBottom: '12px'
+  },
+  links: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    margin: '0 60px',
     '& a': {
-      fontSize: '1.2rem',
-      color: '#10afd6',
+      fontSize: '1rem',
+      color: 'rgba(255, 255, 255, 0.7)',
       textDecoration: 'none',
       fontWeight: 'bold',
+      marginBottom: '8px',
+      whiteSpace: 'no-wrap'
     },
-  },
-  thin: {
-    height: '1px',
-    border: '0',
-    color: '#fff',
-    backgroundColor: '#fff',
-    width: '80%',
-    margin: '10px',
+    '& a:hover': {
+      textDecoration: 'underline'
+    }
   },
   '@media only screen and (max-width: 730px)': {
     about: {
@@ -168,16 +166,13 @@ const HomeStyles = {
         fontSize: '2.3rem',
       },
     },
-  },
-  '@media only screen and (max-width: 345px)': {
+    footer: {
+      justifyContent: 'space-around',
+      flexWrap: 'wrap'
+    },
     links: {
-      flexDirection: 'column',
-      '& span': {
-        display: 'none'
-      },
-      '& a': {
-        marginBottom: '14px'
-      }
+      margin: '0 12px',
+      flexGrow: 1
     }
   },
   '@media only screen and (max-width: 260px)': {
