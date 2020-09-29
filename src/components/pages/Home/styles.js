@@ -99,12 +99,6 @@ const HomeStyles = {
     width: 300,
     height: 106,
   },
-  devs: {
-    color: 'rgba(255, 255, 255, 0.8)',
-    fontSize: '1.2rem',
-    padding: 0,
-    marginBottom: '12px',
-  },
   footer: {
     width: '100%',
     display: 'flex',
@@ -113,7 +107,7 @@ const HomeStyles = {
     justifyContent: 'center',
     borderTop: '1px solid rgba(255, 255, 255, 0.6)',
     paddingTop: '20px',
-    paddingBottom: '12px'
+    paddingBottom: '12px',
   },
   links: {
     display: 'flex',
@@ -121,20 +115,29 @@ const HomeStyles = {
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     margin: '0 60px',
+    '& h5': {
+      color: 'rgba(255, 255, 255, 0.8)',
+      fontSize: '1.2rem',
+      padding: 0,
+      marginBottom: '12px',
+    },
     '& a': {
       fontSize: '1rem',
       color: 'rgba(255, 255, 255, 0.7)',
       textDecoration: 'none',
       fontWeight: 'bold',
       marginBottom: '8px',
-      whiteSpace: 'no-wrap'
+      whiteSpace: 'no-wrap',
     },
     '& a:hover': {
-      textDecoration: 'underline'
-    }
+      textDecoration: 'underline',
+    },
   },
   '@media only screen and (max-width: 730px)': {
     about: {
+      '& h1': {
+        fontSize: '3rem'
+      },
       '& img': {
         width: '60%',
         maxWidth: 300,
@@ -142,9 +145,6 @@ const HomeStyles = {
       '& img:hover': {
         width: '60%',
         marginTop: '0',
-      },
-      '& h1': {
-        fontSize: '2rem',
       },
       '& p': {
         fontSize: '1.2rem',
@@ -160,20 +160,43 @@ const HomeStyles = {
       height: 71,
     },
   },
+  '@media only screen and (max-width: 670px)': {
+    about: {
+      '& h1': {
+        fontSize: '1.6rem'
+      },
+    },
+    footer: {
+      justifyContent: 'space-around',
+      paddingBottom: 0,
+    },
+    links: {
+      margin: '0 12px',
+      marginBottom: '20px',
+      '& h5': {
+        fontSize: '1rem'
+      },
+      '& a': {
+        fontSize: '0.8rem'
+      }
+    },
+  },
   '@media only screen and (max-width: 560px)': {
     banner: {
       '& h1': {
         fontSize: '2.3rem',
       },
     },
+  },
+  '@media only screen and (max-width: 380px)': {
     footer: {
-      justifyContent: 'space-around',
-      flexWrap: 'wrap'
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
     },
     links: {
-      margin: '0 12px',
-      flexGrow: 1
-    }
+      margin: '0 0 20px 0',
+      minWidth: '50%',
+    },
   },
   '@media only screen and (max-width: 260px)': {
     banner: {

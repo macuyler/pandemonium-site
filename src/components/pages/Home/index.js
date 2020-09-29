@@ -40,7 +40,7 @@ const HomePage = ({ classes }) => {
         </div>
         <footer className={classes.footer}>
           <div className={classes.links}>
-            <h5 className={classes.devs}>Developers:</h5>
+            <h5>Developers:</h5>
             <a
               href="https://macuyler.com/"
               rel="noopener noreferrer"
@@ -57,9 +57,26 @@ const HomePage = ({ classes }) => {
             </a>
           </div>
           <div className={classes.links}>
-            <h5 className={classes.devs}>Pages:</h5>
+            <h5>Pages:</h5>
             <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/support">Support</Link>
+            <Link to="/support">Support Page</Link>
+          </div>
+          <div className={classes.links}>
+            <h5>GitHub:</h5>
+            <a
+              href="https://github.com/Macuyler/pandemonium2020"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              2020 App
+            </a>
+            <a
+              href="https://github.com/Macuyler/site2020"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              2020 Site
+            </a>
           </div>
         </footer>
       </div>
