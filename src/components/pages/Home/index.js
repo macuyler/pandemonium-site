@@ -30,7 +30,7 @@ const HomePage = ({ classes }) => {
             </a>
             <a
               className={classes.appStore}
-              href="https://www.apple.com/app-store/"
+              href="https://apps.apple.com/us/app/id1512872575"
               rel="noopener noreferrer"
               target="_blank"
             >
