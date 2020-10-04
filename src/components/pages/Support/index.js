@@ -11,7 +11,7 @@ const SupportPage = ({ classes }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email.length===0 && content.length===0){
+    if (email.length===0 || content.length===0){
       setStatus('Error: Invalid Input!');
     }
     else{

@@ -73,6 +73,30 @@ success: {
     fontWeight: 'bold',
     marginTop: '30px',
 },
+'@media only screen and (max-width: 540px)': {
+    h1: {
+        fontSize: '3rem',
+    },    
+    form: {
+        fontSize: '3rem',
+        width: '90%',
+        '& input': {
+            width: '100%',
+        },
+        '& textarea': {
+            width: '100%',
+        },
+        '& button': {
+            minWidth: '150px',
+            width: '50%',
+        },
+    }
+  },
+ '@media only screen and (max-width: 200px)': {
+    h1: {
+        fontSize: '1.5rem',
+    },
+ } 
 };
 
 export default SupportStyles;
