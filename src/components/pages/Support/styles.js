@@ -92,9 +92,28 @@ success: {
         },
     }
   },
- '@media only screen and (max-width: 200px)': {
+ '@media only screen and (max-width: 348px)': {
+     h1: {
+        fontSize: '1.8rem',
+     },
+ },
+ '@media only screen and (max-width: 225px)': {
     h1: {
-        fontSize: '1.5rem',
+        fontSize: '1rem',
+    },
+    form: {
+        fontSize: '1rem',
+        width: '100%',
+        '& input': {
+            width: '100%',
+        },
+        '& textarea': {
+            width: '100%',
+        },
+        '& button': {
+            minWidth: '100px',
+            width: '40%',
+        },
     },
  } 
 };
