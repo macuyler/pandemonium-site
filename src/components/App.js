@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import injectSheet from 'react-jss';
-import ScrollToTop from './utils/ScrollToTop';
-import routes from './pages';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import injectSheet from "react-jss";
+import ScrollToTop from "./utils/ScrollToTop";
+import routes from "./pages";
 
 const App = ({ classes }) => {
   return (
@@ -17,13 +17,13 @@ const App = ({ classes }) => {
       </Router>
     </div>
   );
-}
+};
 
 const styles = {
   app: {
-    width: '100%',
-    minHeight: '100vh',
-  }
+    width: "100%",
+    minHeight: "100vh",
+  },
 };
 
 export default injectSheet(styles)(App);
