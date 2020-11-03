@@ -4,19 +4,15 @@ import { Link } from 'react-router-dom';
 import PageStyles from '../styles';
 import HomeStyles from './styles';
 import Logo from '../../../assets/img/icon.png';
-import Ghost from '../../../assets/img/ghost.png';
 
 const HomePage = ({ classes }) => {
-  const isSafari =
-    navigator.userAgent.includes('Safari') &&
-    !navigator.userAgent.includes('Chrome');
   return (
     <div className={classes.page}>
       <div className={classes.banner}>
         <h1>pandemonium 2020</h1>
       </div>
       <div className={classes.about}>
-        <img src={isSafari ? Ghost : Logo} alt="Logo" />
+        <img src={Logo} alt="Logo" />
         <h1>What is Pandemonium?</h1>
         <p>
           Pandemonium 2020 is a fun new game, where you try to save as many
@@ -31,14 +27,6 @@ const HomePage = ({ classes }) => {
             target="_blank"
           >
             Get it on Google Play
-          </a>
-          <a
-            className={classes.appStore}
-            href="https://apps.apple.com/us/app/id1512872575"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Download on the App Store
           </a>
         </div>
       </div>
