@@ -1,5 +1,6 @@
 import Banner from '../../../assets/img/city.jpeg';
 import GooglePlay from '../../../assets/img/google-play.png';
+import AppStore from '../../../assets/img/app-store.png';
 
 const HomeStyles = {
   banner: {
@@ -91,6 +92,11 @@ const HomeStyles = {
   playStore: {
     backgroundImage: `url(${GooglePlay})`,
     width: 361,
+    height: 106,
+  },
+  appStore: {
+    backgroundImage: `url(${AppStore})`,
+    width: 300,
     height: 106,
   },
   footer: {

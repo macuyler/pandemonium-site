@@ -28,6 +28,14 @@ const HomePage = ({ classes }) => {
           >
             Get it on Google Play
           </a>
+          <a
+            className={classes.appStore}
+            href="https://testflight.apple.com/join/eW91KKLW"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Download on the App Store
+          </a>
         </div>
       </div>
       <footer className={classes.footer}>
