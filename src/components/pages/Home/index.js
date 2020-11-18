@@ -1,8 +1,7 @@
 import React from 'react';
-import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom';
-import PageStyles from '../styles';
 import HomeStyles from './styles';
+import pageInject from '../inject';
 import Logo from '../../../assets/img/icon.png';
 
 const HomePage = ({ classes }) => {
@@ -83,4 +82,4 @@ const HomePage = ({ classes }) => {
   );
 };
 
-export default injectSheet({ ...PageStyles, ...HomeStyles })(HomePage);
+export default pageInject(HomeStyles)(HomePage);
