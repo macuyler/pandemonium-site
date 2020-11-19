@@ -42,14 +42,14 @@ const HomePage = ({ classes }) => {
         <div className={classes.links}>
           <h5>Developers:</h5>
           <a
-            href="https://macuyler.com/"
+            href="https://macuyler.com"
             rel="noopener noreferrer"
             target="_blank"
           >
             Macuyler Dunn
           </a>
           <a
-            href="https://danielamidon.com/"
+            href="https://danielamidon.com"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -64,14 +64,14 @@ const HomePage = ({ classes }) => {
         <div className={classes.links}>
           <h5>GitHub:</h5>
           <a
-            href="https://github.com/Macuyler/pandemonium2020"
+            href="https://github.com/macuyler/pandemonium2020"
             rel="noopener noreferrer"
             target="_blank"
           >
             2020 App
           </a>
           <a
-            href="https://github.com/Macuyler/site2020"
+            href="https://github.com/macuyler/site2020"
             rel="noopener noreferrer"
             target="_blank"
           >
