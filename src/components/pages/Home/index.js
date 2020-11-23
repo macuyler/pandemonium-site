@@ -33,7 +33,7 @@ const HomePage = ({ classes }) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Download on the App Store
+            Download with Test Flight
           </a>
         </div>
       </div>

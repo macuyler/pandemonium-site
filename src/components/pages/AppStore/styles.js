@@ -1,5 +1,5 @@
 import FileIcon from '../../../assets/img/fileicon.png';
-import AppStore from '../../../assets/img/app-store.png';
+import AppStore from '../../../assets/img/test-flight.png';
 
 const AppStoreStyles = {
   reviews: {
