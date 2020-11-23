@@ -10,10 +10,10 @@ const AppStorePage = ({ classes }) => {
         <h2>and why we aren't on it</h2>
         <h3>Introduction</h3>
         <p>
-          Pandemonium 2020 has been a fun side project that I have been working
-          on since early April 2020. I came up with the idea while sitting on
-          the couch ammused by my family members' addiction to a mobile game
-          called{' '}
+          Pandemonium 2020 has been a fun side project that has been in
+          development since early April 2020. I came up with the idea while
+          sitting on the couch ammused by my family members' addiction to a
+          mobile game called{' '}
           <a
             href="https://bestfiends.com"
             target="_blank"
@@ -30,17 +30,17 @@ const AppStorePage = ({ classes }) => {
         </p>
         <h3>Initial Conflict</h3>
         <p>
-          After working on the game for a couple months, I was ready to launch
-          the app on the Google Play Store and the Apple App Store. I got
-          everything setup, archived the app, and uploaded it. After a couple
-          days the app was approved an put on both app stores! The next thing I
-          did was send a link to a few close friends and family memebers to get
-          their feedback on the game. The one common complaint that I got from
-          all testers was that there should be a tutorial explaining how to
-          play. Adding the tutorial was simple enough, I just added a page
-          before you load a level, and threw some home made GIFs on there. But
-          then I ran into an issue. The app was rejected by the App Store Review
-          team.
+          After working on the game for a couple months, Pandemonium 2020 was
+          ready to launch on the Google Play Store and the Apple App Store. The
+          Pandemonium team got everything setup, archived the app, and uploaded
+          it. After a couple days the app was approved an put on both app
+          stores! The next thing our team did was send a link to a few close
+          friends and family memebers to get their feedback on the game. The one
+          common complaint that we got from all testers was that there should be
+          a tutorial explaining how to play. Adding the tutorial was simple
+          enough, we just added a page before you load a level, and threw some
+          home made GIFs on there. But then we ran into an issue. The app was
+          rejected by the App Store Review team.
         </p>
         <div className={classes.reviews}>
           <span>Oct 16, 2020 at 6:57 PM</span>
@@ -96,7 +96,7 @@ const AppStorePage = ({ classes }) => {
         <p>
           My initial impressions were, "That's a dumb rule, but fair enough."
           The tutorial text was definitely indirectly referencing COVID-19, so
-          maybe if I just change the wording in the tutorial it will be fine!
+          maybe if we just change the wording in the tutorial it will be fine!
         </p>
         <div className={classes.reviews}>
           <span>Oct 17, 2020 at 8:33 AM</span>
@@ -217,7 +217,7 @@ const AppStorePage = ({ classes }) => {
           </p>
         </div>
         <p>
-          So I started working on a <em>censored</em> version of the app for
+          So we started working on a <em>censored</em> version of the app for
           iOS, hoping that the app would be approved again soon.
         </p>
         <h3>Second Issue</h3>
@@ -385,7 +385,7 @@ const AppStorePage = ({ classes }) => {
         <p>
           What a releif, they finally said what exactly they have an issue with,
           and even included a screenshot! The issue is that we use the word{' '}
-          <em>"Hospital"</em> in the tutorial. So now I can just go in and
+          <em>"Hospital"</em> in the tutorial. So now we can just go in and
           change that and then everything will be fine, right?
         </p>
         <p>
@@ -464,10 +464,10 @@ const AppStorePage = ({ classes }) => {
           told Apple they were masks Apple had no problem with them.
         </p>
         <p>
-          As painful as it was to redo the entire theme of the game, I was not
-          yet ready to give up on the entirety of the iOS market. So I made the
+          As painful as it was to redo the entire theme of the game, we were not
+          yet ready to give up on the entirety of the iOS market. So we made the
           decision to redo the mask characters as ghosts on iOS. This took a lot
-          longer than my previous changes, but I was sure that this would get
+          longer than our previous changes, but we were sure that this would get
           the app back on the Apple App Store.
         </p>
         <div className={classes.reviews}>
@@ -623,7 +623,7 @@ const AppStorePage = ({ classes }) => {
         <p>
           Overall this was a very frustrating experience. I appreciate the fact
           that the Apple App Store is a private software distrobution platform,
-          and as such, has no obligation to put my app on there. But I do feel
+          and as such, has no obligation to put any app on there. But I do feel
           that their current system unfairly discriminates against certain apps.
           I think that, had I never uploaded the tutorial specifically saying
           that the game was a parody of the COVID-19 pandeminc, they never to
@@ -632,9 +632,9 @@ const AppStorePage = ({ classes }) => {
           hope that they someday fix that.
         </p>
         <p>
-          So what happened with Pandemonium? Well, looking back I probably
-          should have known that I never would have gotten the app back on the
-          App Store, which would have allowed me to skip to where we are now.
+          So what happened with Pandemonium? Well, looking back we probably
+          should have known that we never would have gotten the app back on the
+          App Store, which would have allowed us to skip to where we are now.
           Pandemonium 2020 is still alive and kicking both on Android and iOS.
           Pandemonium 2020 on iOS is currently being distributed via a public
           Test Flight invitation which can be found on our home page. This
