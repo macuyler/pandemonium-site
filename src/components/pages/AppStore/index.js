@@ -642,6 +642,14 @@ const AppStorePage = ({ classes }) => {
           apparently goes through a less rigorous review process.
         </p>
       </div>
+      <a
+        className={classes.appStore}
+        href="https://testflight.apple.com/join/eW91KKLW"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Download on the App Store
+      </a>
     </div>
   );
 };

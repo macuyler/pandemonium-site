@@ -1,4 +1,5 @@
 import FileIcon from '../../../assets/img/fileicon.png';
+import AppStore from '../../../assets/img/app-store.png';
 
 const AppStoreStyles = {
   reviews: {
@@ -59,6 +60,25 @@ const AppStoreStyles = {
     backgroundImage: `url(${FileIcon})`,
     backgroundSize: '24px auto',
     backgroundRepeat: 'no-repeat',
+  },
+  appStore: {
+    backgroundImage: `url(${AppStore})`,
+    width: 300,
+    height: 106,
+    backgroundSize: '100%',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    color: 'rgba(0,0,0,0)',
+    transition: 'all 250ms ease',
+    marginBottom: 50,
+    '&:hover': {
+      transform: 'scale(1.08)',
+    },
+  },
+  '@media only screen and (max-width: 350px)': {
+    appStore: {
+      width: '80%',
+    },
   },
 };
 
