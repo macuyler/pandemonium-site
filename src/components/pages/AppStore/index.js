@@ -457,8 +457,7 @@ const AppStorePage = ({ classes }) => {
         <p>
           Apparently they now have a problem with some of the in game characters
           wearing a mask. I have two major issues with this, the first being
-          that masks are not specific to COVID-19. Will Apple just be banning
-          all apps containing content with masks? Second, the graphics in
+          that masks are not specific to COVID-19. Second, the graphics in
           Pandemonium 2020 are very minimal, and as such you might not even know
           that the white square on their faces is a mask. After all, the
           original game that was approved had those same masks, and before I
@@ -526,12 +525,6 @@ const AppStorePage = ({ classes }) => {
             such as nudity, pornography, and profanity.
           </p>
         </div>
-        <p>
-          After all that work, completely degrading the purpose and experience
-          of the game, they still aren't happy. At this point, I am very upset
-          and disapointed. I feel that I have bent over backwards for Apple, and
-          they still have a gripe with my game. So I submitted one final appeal.
-        </p>
         <div className={classes.reviews}>
           <span>Oct 30, 2020 at 10:35 AM</span>
           <span>From macuyler.d@gmail.com (Macuyler Dunn)</span>
@@ -632,7 +625,7 @@ const AppStorePage = ({ classes }) => {
           that the Apple App Store is a private software distrobution platform,
           and as such, has no obligation to put my app on there. But I do feel
           that their current system unfairly discriminates against certain apps.
-          I think that had I never uploaded the tutorial specifically saying
+          I think that, had I never uploaded the tutorial specifically saying
           that the game was a parody of the COVID-19 pandeminc, they never to
           this day would have removed the app from the app store. I do think
           that shows they have biases in their app review process, and I would
