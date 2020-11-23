@@ -56,10 +56,15 @@ const AppStoreStyles = {
     color: '#ff3b30',
   },
   fileIcon: {
-    padding: '3px 0 3px 30px',
+    padding: '3px 3px 3px 30px',
     backgroundImage: `url(${FileIcon})`,
     backgroundSize: '24px auto',
     backgroundRepeat: 'no-repeat',
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    display: 'block',
+    boxSizing: 'border-box',
   },
   appStore: {
     backgroundImage: `url(${AppStore})`,
