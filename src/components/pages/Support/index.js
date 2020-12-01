@@ -1,27 +1,26 @@
-import React from "react";
-import injectSheet from "react-jss";
-import PageStyles from "../styles";
-import SupportStyles from "./styles";
-import { db } from "../../../firebase";
+import React from 'react';
+import SupportStyles from './styles';
+import pageInject from '../inject';
+import { db } from '../../../firebase';
 
 const SupportPage = ({ classes }) => {
-  const [email, setEmail] = React.useState("");
-  const [content, setContent] = React.useState("");
-  const [status, setStatus] = React.useState("");
+  const [email, setEmail] = React.useState('');
+  const [content, setContent] = React.useState('');
+  const [status, setStatus] = React.useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email.length === 0 || content.length === 0) {
-      setStatus("Error: Invalid Input!");
+      setStatus('Error: Invalid Input!');
     } else {
-      db.collection("reports")
+      db.collection('reports')
         .doc()
         .set({ email, content })
-        .then(() => setStatus("Report Submitted! :D"))
+        .then(() => setStatus('Report Submitted! :D'))
         .catch((error) => setStatus(`Error: ${error.message}`));
 
-      setEmail("");
-      setContent("");
+      setEmail('');
+      setContent('');
     }
   };
 
@@ -47,7 +46,7 @@ const SupportPage = ({ classes }) => {
       {status.length > 0 && (
         <h2
           className={
-            status.includes("Error:") ? classes.error : classes.success
+            status.includes('Error:') ? classes.error : classes.success
           }
         >
           {status}
@@ -57,4 +56,4 @@ const SupportPage = ({ classes }) => {
   );
 };
 
-export default injectSheet({ ...PageStyles, ...SupportStyles })(SupportPage);
+export default pageInject(SupportStyles)(SupportPage);

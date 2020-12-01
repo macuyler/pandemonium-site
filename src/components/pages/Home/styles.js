@@ -1,6 +1,6 @@
 import Banner from '../../../assets/img/city.jpeg';
 import GooglePlay from '../../../assets/img/google-play.png';
-import AppStore from '../../../assets/img/app-store.png';
+import AppStore from '../../../assets/img/test-flight.png';
 
 const HomeStyles = {
   banner: {
