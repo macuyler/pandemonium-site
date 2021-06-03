@@ -1,5 +1,25 @@
 * { margin: 0; padding: 0; }
 
+/* Handle Scrollbars in Firefox */
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+/* Handle Scrollbars in Chrome, Safari, and Edge */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 html { background-color: rgb(25, 25, 25); }
 
 body {
