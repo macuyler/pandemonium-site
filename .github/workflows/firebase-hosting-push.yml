@@ -27,3 +27,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PANDEMONIUM2020_F17B1 }}'
           projectId: pandemonium2020-f17b1
+          channelId: live
