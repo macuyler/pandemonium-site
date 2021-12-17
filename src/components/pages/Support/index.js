@@ -2,7 +2,7 @@ import React from "react";
 import SupportStyles from "./styles";
 import pageInject from "../inject";
 import { db } from "../../../firebase";
-import { doc, setDoc } from "firebase/firestore";
+import { collection, doc, setDoc } from "firebase/firestore";
 
 const SupportPage = ({ classes }) => {
   const [email, setEmail] = React.useState("");
@@ -14,7 +14,7 @@ const SupportPage = ({ classes }) => {
     if (email.length === 0 || content.length === 0) {
       setStatus("Error: Invalid Input!");
     } else {
-      setDoc(doc(db, "reports"), { email, content })
+      setDoc(doc(collection(db, "reports")), { email, content })
         .then(() => setStatus("Report Submitted! :D"))
         .catch((error) => setStatus(`Error: ${error.message}`));
 
