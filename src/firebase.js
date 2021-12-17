@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/analytics';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 
 // All configuration variables are pulled from a .env file
 
@@ -15,6 +15,6 @@ const config = {
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
-firebase.initializeApp(config);
-export const analytics = firebase.analytics();
-export const db = firebase.firestore();
+export const fbApp = initializeApp(config);
+export const analytics = getAnalytics(fbApp);
+export const db = getFirestore(fbApp);

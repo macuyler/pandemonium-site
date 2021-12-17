@@ -1,26 +1,25 @@
-import React from 'react';
-import SupportStyles from './styles';
-import pageInject from '../inject';
-import { db } from '../../../firebase';
+import React from "react";
+import SupportStyles from "./styles";
+import pageInject from "../inject";
+import { db } from "../../../firebase";
+import { doc, setDoc } from "firebase/firestore";
 
 const SupportPage = ({ classes }) => {
-  const [email, setEmail] = React.useState('');
-  const [content, setContent] = React.useState('');
-  const [status, setStatus] = React.useState('');
+  const [email, setEmail] = React.useState("");
+  const [content, setContent] = React.useState("");
+  const [status, setStatus] = React.useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email.length === 0 || content.length === 0) {
-      setStatus('Error: Invalid Input!');
+      setStatus("Error: Invalid Input!");
     } else {
-      db.collection('reports')
-        .doc()
-        .set({ email, content })
-        .then(() => setStatus('Report Submitted! :D'))
+      setDoc(doc(db, "reports"), { email, content })
+        .then(() => setStatus("Report Submitted! :D"))
         .catch((error) => setStatus(`Error: ${error.message}`));
 
-      setEmail('');
-      setContent('');
+      setEmail("");
+      setContent("");
     }
   };
 
@@ -46,7 +45,7 @@ const SupportPage = ({ classes }) => {
       {status.length > 0 && (
         <h2
           className={
-            status.includes('Error:') ? classes.error : classes.success
+            status.includes("Error:") ? classes.error : classes.success
           }
         >
           {status}
