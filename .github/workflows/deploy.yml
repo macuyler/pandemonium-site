@@ -26,7 +26,7 @@ jobs:
           REACT_APP_MEASUREMENT_ID: ${{ secrets.REACT_APP_MEASUREMENT_ID }}
           REACT_APP_ADMIN_UID: ${{ secrets.REACT_APP_ADMIN_UID }}
       - name: Firebase Action
-        uses: w9jds/firebase-action@v1.5.0
+        uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
