@@ -1,7 +1,7 @@
-import React from 'react';
-import PrivacyStyles from './styles';
-import pageInject from '../inject';
-import ArticleWrapper from '../../wrappers/Article';
+import React from "react";
+import PrivacyStyles from "./styles";
+import pageInject from "../inject";
+import ArticleWrapper from "../../wrappers/Article";
 
 const B = ({ children }) => <strong>{children}</strong>;
 
@@ -337,7 +337,7 @@ const PrivacyPage = ({ classes }) => {
               If you are a resident in the European Economic Area and you
               believe we are unlawfully processing your personal information,
               you also have the right to complain to your local data protection
-              supervisory authority. You can find their contact details{' '}
+              supervisory authority. You can find their contact details{" "}
               <a
                 href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
                 target="_blank"
@@ -349,7 +349,7 @@ const PrivacyPage = ({ classes }) => {
             </p>
             <p>
               If you are a resident in Switzerland, the contact details for the
-              data protection authorities are available{' '}
+              data protection authorities are available{" "}
               <a
                 href="https://www.edoeb.admin.ch/edoeb/en/home.html"
                 target="_blank"
@@ -429,7 +429,7 @@ const PrivacyPage = ({ classes }) => {
             <h4>11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h4>
             <p>
               If you have questions or comments about this notice, you may email
-              us at contact.macuyler@gmail.com or fill out a report on our{' '}
+              us at contact.macuyler@gmail.com or fill out a report on our{" "}
               <a href="/support">support page</a>.
             </p>
           </div>
@@ -443,7 +443,7 @@ const PrivacyPage = ({ classes }) => {
               right to request access to the personal information we collect
               from you, change that information, or delete it in some
               circumstances. To request to review, update, or delete your
-              personal information, please submit a request form by clicking{' '}
+              personal information, please submit a request form by clicking{" "}
               <a href="https://app.termly.io/notify/1531da8f-767c-4a67-ae62-f04ea27316e9">
                 here
               </a>
@@ -451,7 +451,7 @@ const PrivacyPage = ({ classes }) => {
             </p>
           </div>
           <p className={classes.center}>
-            This privacy policy was created using{' '}
+            This privacy policy was created using{" "}
             <a
               href="https://termly.io/products/privacy-policy-generator/?ftseo"
               target="_blank"
