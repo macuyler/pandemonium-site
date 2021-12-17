@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import HomeStyles from './styles';
-import pageInject from '../inject';
-import Logo from '../../../assets/img/icon.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import HomeStyles from "./styles";
+import pageInject from "../inject";
+import Logo from "../../../assets/img/icon.png";
 
 const HomePage = ({ classes }) => {
   return (
@@ -62,7 +62,7 @@ const HomePage = ({ classes }) => {
             2020 App
           </a>
           <a
-            href="https://github.com/macuyler/site2020"
+            href="https://github.com/macuyler/pandemonium-site"
             rel="noopener noreferrer"
             target="_blank"
           >
