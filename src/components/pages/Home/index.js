@@ -50,7 +50,7 @@ const HomePage = ({ classes }) => {
         <div className={classes.links}>
           <h5>Pages:</h5>
           <Link to="/privacy">Privacy Policy</Link>
-          <Link to="/support">Support Page</Link>
+          <Link to="/appstore">Apple App Store</Link>
         </div>
         <div className={classes.links}>
           <h5>GitHub:</h5>
