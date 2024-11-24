@@ -642,10 +642,11 @@ const AppStorePage = ({ classes }) => {
           So what happened with Pandemonium? Well, looking back I probably
           should have known that I never would have gotten the app back on the
           App Store, which would have allowed me to skip to where we are now.
-          Pandemonium 2020 is still alive and kicking on Android.
-          Apple eventually cracked down on our Test Flight link, and killed it.
-          So the only way to play Pandemonium 2020 on iOS is to download the
-          source code and compile it locally through Xcode.
+          Pandemonium 2020 was allowed to be on the Google Play store for years,
+          but was eventually removed because we failed to update it for a while.
+          Apple eventually cracked down on our Test Flight link, and killed it as well.
+          So the only way to play Pandemonium 2020 nowadays is to download the
+          source code and compile it locally.
         </p>
       </div>
     </div>

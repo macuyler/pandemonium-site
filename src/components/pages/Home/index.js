@@ -14,20 +14,10 @@ const HomePage = ({ classes }) => {
         <img src={Logo} alt="Logo" />
         <h1>What is Pandemonium?</h1>
         <p>
-          Pandemonium 2020 is a fun new game, where you try to save as many
+          Pandemonium 2020 is a fun game, where you try to save as many
           people from the pandemonium as possible. Earn stars on each level to
           gain bragging rights over your friends!
         </p>
-        <div className={classes.downloads}>
-          <a
-            className={classes.playStore}
-            href="https://play.google.com/store/apps/details?id=com.macuyler.pandemonium2020"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Get it on Google Play
-          </a>
-        </div>
       </div>
       <footer className={classes.footer}>
         <div className={classes.links}>
